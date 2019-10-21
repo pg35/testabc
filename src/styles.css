@@ -1,0 +1,62 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+#mesblkml {
+  line-height: 1.2em;
+}
+iframe {
+  border: 1px solid;
+  overflow: hidden;
+  width: 100%;
+  line-height: inherit;
+}
+textarea {
+  overflow: hidden;
+  width: 100%;
+  resize: none;
+  line-break: inherit;
+}
+.mesblkml-msgwrap {
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #bbb;
+}
+.mesblkml-title {
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+.mesblkml-msgpreview--mobile {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+.mesblkml-msgeditor {
+  padding: 0;
+  margin-bottom: 1em;
+}
+.mesblkml-msgpreview {
+  display: none;
+}
+@media (min-width: 768px) {
+  .mesblkml-2cols {
+    display: flex;
+  }
+  .mesblkml-2cols > div {
+    width: 50%;
+  }
+  .mesblkml-msgeditor {
+    padding-right: 10px;
+  }
+  .mesblkml-msgpreview {
+    border-left: 2px solid;
+    display: block;
+    padding-left: 10px;
+  }
+  .mesblkml-msgpreview p:first-child {
+    margin: 0;
+  }
+  .mesblkml-msgpreview--mobile {
+    display: none;
+  }
+}
